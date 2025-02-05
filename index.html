@@ -4,18 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RHassett Plumbing</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <!-- header strip start here  -->
     <div id="top">
-        <h1 class="header">RHassett Plumbing</h1>
-        <h2 class="header">(415) 599-9320</h2>
-        <h2 id = "motto" class="header">San Francisco's Plumber</h2>
+
+        <div class = "logo">
+            <img id="logo1" src="{{ url_for('static', filename='rhasset_plumbing_logo.png') }}" alt="Rhasset Plumbing Logo">
+        </div>
+
+        <div id = "back-home" class = "header-center-content">
+            <h1 class="header">RHassett Plumbing</h1>
+            <div class="motto">
+                <em>San Francisco's #1 Trusted Plumber</em>
+            </div> 
+
+            <div class="motto">
+                We are currently {{open}}
+            </div> 
+        </div>
+
+
+        <div class="header-right-content">
+            San Francisco, CA
+            <br>
+            📞 (415) 599-9320
+            <br>
+            <br>
+            <!-- call button that creates a link to start phone call -->
+            <a href="tel:41559999320" class="call-button">&nbsp;Call Us Now!&nbsp;</a>
+        </div>
+        
+
     </div>
 
-    <p id="p1">Ronan Hassett Plumbing is the best in the area.</p>
-    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eveniet inventore doloribus magni repellat nam iure repellendus doloremque ad odio voluptatum officia, perspiciatis, maiores vero facilis dignissimos quibusdam quae reiciendis.</p>
-    <img id="logo1" src="rhasset_plumbing_logo.png" alt="Rhasset Plumbing Logo">
+    
+
+    <!-- navigation bar -->
+    <br>
+    <div class = "navigation-bar">
+        <div class = "navigation-buttons">
+            <div class = "underline-on-hover">
+                <!-- the # allows the link to target a specific section on the same page, rather than navigating to another URL -->
+                <a href="#services">Services</a>
+            </div>
+        </div>
+
+        <div class = "navigation-buttons">
+            <div class = "underline-on-hover">
+                <a href="#testimonials">Testimonials</a>
+            </div>
+        </div>
+
+        <div class = "navigation-buttons">
+            <div class = "underline-on-hover">
+                <a href="#about">About</a>
+            </div>
+        </div>
+
+        <div class = "navigation-buttons">
+            <div class = "underline-on-hover">
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+    
+    </div>
+
+
+    <!-- services section start here -->
+    <div id = "services" class="section">
+        <div style="text-align: center;">
+            <p>Services Offered</p>
+            <div>
+                <!-- fill with services offered + pictures of work -->
+                Drain repair, Plumbing inspection, Toilet repair, Electric inspection, Plumbing repair.
+
+            </div>
+        </div>
+
+
+
+    </div>
+    
+
+    <!-- yelp reviews start here  -->
+    <div id = "testimonials" class="section">
+        <div style="text-align: center;">
+            <p>Testimonials</p>
+        </div>
+        <div class="yelp-review">
+            <div class = review>
+                <span class="yelp-review" data-review-id="lS2hQqywa9wB6RILw0Ve8Q" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=I1-3duj6sFCd7T-IkPVXVw" rel="nofollow noopener">Jeanne D.</a>'s <a href="https://www.yelp.com/biz/r-hassett-plumbing-san-francisco?hrid=lS2hQqywa9wB6RILw0Ve8Q" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/czEzB9apPSS2SaSZCPMtAw" rel="nofollow noopener">R. Hassett Plumbing</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
+            </div>
+
+            <div class = review>
+                <span class="yelp-review" data-review-id="WcBXePtMe56U5LM8Bqc5eA" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=ZJr5Usebor0YzmhoMOOaCA" rel="nofollow noopener">Jenny M.</a>'s <a href="https://www.yelp.com/biz/r-hassett-plumbing-san-francisco?hrid=WcBXePtMe56U5LM8Bqc5eA" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/czEzB9apPSS2SaSZCPMtAw" rel="nofollow noopener">R. Hassett Plumbing</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
+            </div>
+
+            <div class = review>
+                <span class="yelp-review" data-review-id="vOMIbuQB4qHxFWa-m-v6lw" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=5bJTaQZjj_tPYnaOHIDi6Q" rel="nofollow noopener">Madeleine R.</a>'s <a href="https://www.yelp.com/biz/r-hassett-plumbing-san-francisco?hrid=vOMIbuQB4qHxFWa-m-v6lw" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/czEzB9apPSS2SaSZCPMtAw" rel="nofollow noopener">R. Hassett Plumbing</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
+            </div>
+
+            <div class = review>
+                <span class="yelp-review" data-review-id="98mx9mcNg1m9RZgDspPIag" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=a0GCAfLXn99K7IKbTpN8lA" rel="nofollow noopener">Sharon B.</a>'s <a href="https://www.yelp.com/biz/r-hassett-plumbing-san-francisco?hrid=98mx9mcNg1m9RZgDspPIag" rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/czEzB9apPSS2SaSZCPMtAw" rel="nofollow noopener">R. Hassett Plumbing</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a><script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- about section start here -->
+    <div id = "about" class="section">
+        <div style="text-align: center;">
+            <p>About Us</p>
+            <div>
+                <!-- change this description if needed -->
+                <b>Your Trusted Plumbing Expert with 20 Years of Experience</b> 
+                <br>
+                With over two decades of experience and countless glowing reviews, RHassett Plumbing is the trusted choice for all your plumbing needs. 
+                Fully licensed and certified, we deliver reliable, friendly, and high-quality solutions. 
+                Whether it's a leaky faucet or a complex pipe repair, we pride ourselves on delivering expert craftsmanship and trustworthy service you can count on.
+                Choose a plumber who values your home, time, and peace of mind—because great plumbing starts with someone you can trust. 
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- contact section start here -->
+    <div id = "contact" class="section">
+        <div style="text-align: center;">
+            <p>Contact Us</p>
+            <div>
+                <!-- change this description if needed -->
+                <a href="tel:41559999320" class="call-button">&nbsp;Call Us Now!&nbsp;</a>
+                
+                
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- back to home button -->
+    <div class = "back-home-button">
+        <a href="#back-home">Back To Home</a>
+     </div>
+
 
 
 </body>
