@@ -1,20 +1,29 @@
 body{
     /* background: linear-gradient(#00438a,skyblue);
     background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    background: linear-gradient(#00438a,skyblue);    background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background-position: center; */
+    background:rgb(245, 239, 231);    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
+
 #top{
-    background-image: url("https://media.istockphoto.com/id/1225791966/vector/industrial-seamless-pattern-piping-for-water-gas-oil.jpg?s=612x612&w=0&k=20&c=lcLkr0KEoiiItu9DCdlboFTKdaSW4zFHzSerKNgFQRM=");
+    /* background-image: url("https://media.istockphoto.com/id/1225791966/vector/industrial-seamless-pattern-piping-for-water-gas-oil.jpg?s=612x612&w=0&k=20&c=lcLkr0KEoiiItu9DCdlboFTKdaSW4zFHzSerKNgFQRM="); */
+    background-color: rgb(33, 53, 85) ;
     background-repeat: repeat-x;
     background-size:contain;
     border-radius: 5px;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     border-style: double;
     border-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+
+
 }
 
 .header{
@@ -22,20 +31,68 @@ body{
     color: whitesmoke;
     font-family: arial;
     padding-bottom: 5px;
+    
 }
 
-#motto{
-    /* border-bottom-style:double;
-    padding-bottom: 10px;     */
+.logo img{
+    max-width:200px;
+    height: auto;
 }
 
-#logo1{
-    width:165px;
-    height:90px;
+.header-center-content {
+    font-size: 2.5rem;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .motto{
+    font-size: 25px;
+    margin-top: -55px;
+    color: whitesmoke;
+    font-family: arial;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
+
+.header-right-content {
+    text-align: right; 
+    color: whitesmoke;
+    font-family: arial; 
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Call Button Styling */
+.call-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: rgb(62, 88, 121);
+    color: #ffffffc2;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: #ffffffc2;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.button-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Call Button Hover Effect */
+.call-button:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+}
+/*  */
 
 p{
-    background-color: rgb(26, 26, 26);
+    background-color:rgb(62, 88, 121) ;
     font-family: "consolas",sans-serif;
     color: #ffffffc2;
     font-weight: bold;
@@ -45,6 +102,107 @@ p{
     border-radius: 7px;
     padding: 5px;
 }
+
+.yelp-review {
+    display: flex; 
+    justify-content: space-between;
+    gap: 10px;
+
+
+}
+ .review { 
+    flex: 1;
+
+ }
+
+ .call-button {
+    display: inline-block;
+    padding: 5px;
+    background-color:rgb(62, 88, 121);
+    color: #ffffffc2;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 16px;
+    border-width: 2px;
+    border-style:outset;
+    border-radius: 7px;
+    border-color: #ffffffc2;
+    cursor: pointer;
+ }
+
+ .navigation-bar {
+    background-color: rgb(216, 196, 182) ;
+    background-repeat: repeat-x;
+    background-size:contain;
+    border-radius: 5px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    border-style: double;
+    border-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ .navigation-buttons {
+    font-family: arial;
+    color: rgb(33, 53, 85);
+    -webkit-text-stroke: 0px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 25px;
+    cursor: pointer;
+ }
+
+ 
+ .underline-on-hover:hover {
+    text-decoration: underline; 
+}
+
+
+/* remove default changes that come with HTML links */
+a {
+    text-decoration: none;  
+    color: inherit;      
+}
+
+.section {
+    height: 100vh; /* Each section takes up the full viewport height */
+    padding: 20px;
+}
+
+
+
+.back-home-button {
+    display: inline-block;
+    padding: 5px;
+    background-color:rgb(62, 88, 121);
+    color: #ffffffc2;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    border-width: 2px;
+    border-style:outset;
+    border-radius: 7px;
+    border-color: #ffffffc2;
+    cursor: pointer;
+    position: fixed;  
+    right: 10px;   
+    bottom: 10px;   
+    margin: 10px;   
+    
+
+
+
+}
+
+
+
+
+/* this is the website i used for the color theme (refer to this when needed to choose coloring to stick w/ theme) */
+/* https://colorhunt.co/palette/2135553e5879d8c4b6f5efe7 */
+
 /* this is using the id of p3, to specifically style that element */
 /* #p1{
     color: #d1ae00;
