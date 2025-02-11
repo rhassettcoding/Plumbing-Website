@@ -29,11 +29,11 @@
         <div class="header-right-content">
             San Francisco, CA
             <br>
-            📞 (415) 599-9320
+            📞 (415) 205-1095
             <br>
             <br>
             <!-- call button that creates a link to start phone call -->
-            <a href="tel:41559999320" class="call-button">&nbsp;Call Us Now!&nbsp;</a>
+            <a href="tel:4152051095" class="call-button">&nbsp;Call Us Now!&nbsp;</a>
         </div>
         
 
@@ -141,23 +141,24 @@
             <p>Contact Us</p>
             <div>
                 <!-- change this description if needed -->
-                <a href="tel:41559999320" class="call-button">&nbsp;Call Us Now!&nbsp;</a>
-                
-                
+                <a href="tel:4152051095" class="call-button">&nbsp;Call Us Now!&nbsp;</a>
+                <button class="call-button" onclick="sendEmail()">Send Email</button>
+                <script>
+                    function sendEmail() {
+                        window.location.href = "mailto:ronanhassettplumbing@gmail.com?subject=Plumbing Related Issue&body=[Insert Your Issue/Comment]";
+                    }
+                </script>
 
+                <h4>If you'd like to email about an issue, regarding service or other questions, you may email us at ronanhassettplumbing@gmail.com</h4>
+                <h4>Please send all urgent messages via phone, Thank you!</h4>
             </div>
         </div>
-
-
-
     </div>
 
     <!-- back to home button -->
     <div class = "back-home-button">
         <a href="#back-home">Back To Home</a>
      </div>
-
-
 
 </body>
 </html>
