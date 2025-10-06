@@ -5,9 +5,6 @@ from flask import render_template
 from datetime import datetime
 import pytz
 
-#ZIP CODE IMPORT ---------
-from src.zipCode import isZipCode
-
 #TIME
 
 OPENING_TIME = "7:30 AM (PST)"
