@@ -42,3 +42,4 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 #TO RUN -> python app.py
+#just a comment to get my branch (HoursAndImages) on the remote 
